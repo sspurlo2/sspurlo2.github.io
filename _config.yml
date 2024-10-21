@@ -1,0 +1,10 @@
+title: Sam Spurlock Portfolio
+email: samanthajoespurlock@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Sam Spurlock, samanthajoespurlock@gmail.com
+baseurl: "/jekyll-slender-template" # the subpath of your site, e.g. /blog
+url: "sspurlo2@github.io" # the base hostname & protocol for your site
+github_username:  sspurlo2
+
+# Build settings
+markdown: kramdown
