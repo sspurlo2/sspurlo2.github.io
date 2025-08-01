@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #4f46e5, #9333ea, #ec4899);
+      color: white;
+      line-height: 1.6;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1, h2 {
+      font-weight: 800;
+    }
+    h2 {
+      border-bottom: 2px solid white;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .projects, .gallery {
+      display: grid;
+      gap: 1rem;
+    }
+    .projects {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .project-card, .gallery img {
+      background: white;
+      color: black;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 6px;
+    }
+    form button {
+      padding: 0.75rem 1.5rem;
+      background: white;
+      color: #4f46e5;
+      border: none;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <section style="text-align:center">
+    <h1>Hi, I'm [Your Name]</h1>
+    <p>Aspiring Developer | Tech Enthusiast | Problem Solver</p>
+    <a href="#projects" class="button">View Projects</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m passionate about blending creativity and logic to build tech solutions that make a difference.
+      I enjoy working with modern web technologies, designing user-centric interfaces, and exploring the
+      intersection of technology and society.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A short description of project 1 goes here.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>A short description of project 2 goes here.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>A short description of project 3 goes here.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/150" alt="Gallery Item" />
+      <img src="https://via.placeholder.com/150" alt="Gallery Item" />
+      <img src="https://via.placeholder.com/150" alt="Gallery Item" />
+      <img src="https://via.placeholder.com/150" alt="Gallery Item" />
+      <img src="https://via.placeholder.com/150" alt="Gallery Item" />
+      <img src="https://via.placeholder.com/150" alt="Gallery Item" />
+      <img src="https://via.placeholder.com/150" alt="Gallery Item" />
+      <img src="https://via.placeholder.com/150" alt="Gallery Item" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
