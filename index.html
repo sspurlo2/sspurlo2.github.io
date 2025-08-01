@@ -7,118 +7,62 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      color: #333;
+      font-family: 'Georgia', serif;
+      background-color: #f9f9f9;
+      color: #222;
       line-height: 1.6;
-      background: linear-gradient(135deg, #fbc7ac, #a1c4fd, #c2e9fb);
-      overflow-x: hidden;
-      position: relative;
-      min-height: 100vh;
     }
-    /* Floating pastel circles background */
-    #background-shapes {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      pointer-events: none;
-      z-index: -1;
-    }
-    .shape {
-      position: absolute;
-      border-radius: 50%;
-      opacity: 0.2;
-      animation: float 6s ease-in-out infinite alternate;
-    }
-    .shape1 {
-      width: 200px;
-      height: 200px;
-      background: #fbc7ac;
-      top: 10%;
-      left: 15%;
-      animation-delay: 0s;
-    }
-    .shape2 {
-      width: 150px;
-      height: 150px;
-      background: #a1c4fd;
-      top: 40%;
-      left: 70%;
-      animation-delay: 2s;
-    }
-    .shape3 {
-      width: 100px;
-      height: 100px;
-      background: #c2e9fb;
-      top: 70%;
-      left: 30%;
-      animation-delay: 4s;
-    }
-    @keyframes float {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-20px); }
-    }
-
     nav {
-      background: #5a9bd4;
+      background: #4a90e2;
       padding: 1rem 2rem;
       display: flex;
       gap: 1rem;
       justify-content: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
     }
     nav a {
       color: white;
       text-decoration: none;
       font-weight: 600;
       padding: 0.5rem 1rem;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
+      border-radius: 4px;
     }
     nav a:hover {
-      background: #3e7ab8;
+      background: #357ABD;
     }
     nav a.active {
-      background: #2c5a8a;
+      background: #285EAA;
     }
     main {
       max-width: 600px;
       margin: 3rem auto;
-      padding: 0 1rem;
+      padding: 2rem 1rem;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       text-align: center;
-      background: rgba(255 255 255 / 0.8);
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
     img.headshot {
-      width: 150px;
-      height: 150px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
       margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     h1 {
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.5rem;
       font-weight: 700;
-      font-size: 2.2rem;
+      font-size: 2rem;
+      font-family: 'Helvetica Neue', sans-serif;
     }
     p {
       font-size: 1.1rem;
-      color: #555;
+      color: #444;
       margin-bottom: 1rem;
-      line-height: 1.5;
     }
   </style>
 </head>
 <body>
-
-  <div id="background-shapes">
-    <div class="shape shape1"></div>
-    <div class="shape shape2"></div>
-    <div class="shape shape3"></div>
-  </div>
 
   <nav>
     <a href="index.html" class="active">Home</a>
@@ -130,13 +74,11 @@
     <img src="IMG_7065.jpg" alt="Sam Spurlock Headshot" class="headshot" />
     <h1>Hello, I'm Sam Spurlock</h1>
     <p>
-      I am a fourth year student at the University of Oregon. I am earning
-      a B.S in Computer Science, with a minor in Psychology. Passionate about Mental Health and AI,
-      I want to find new ways of combining the two to deepen mental health resources.
+      I'm a fourth-year student at the University of Oregon, pursuing a B.S. in Computer Science with a minor in Psychology.  
+      I’m passionate about mental health and AI, and I want to explore new ways to combine the two to enhance mental health resources.
     </p>
     <p>
-      When I am not working on my studies, I enjoy reading, spending time with friends and family,
-      playing with my cat, and playing puzzle games.
+      When I’m not studying, I enjoy reading, spending time with friends and family, playing with my cat, and puzzle games.
     </p>
   </main>
 
