@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sam Spurlock Portfolio</title>
+  <title>Home - [Your Name]</title>
   <style>
     body {
       margin: 0;
@@ -12,169 +12,66 @@
       color: #333;
       line-height: 1.6;
     }
-    header, section {
-      max-width: 700px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    nav {
+      background: #5a9bd4;
+      padding: 1rem 2rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
     }
-    header {
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background: #3e7ab8;
+    }
+    nav a.active {
+      background: #2c5a8a;
+    }
+    main {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 0 1rem;
       text-align: center;
-      padding-top: 3rem;
-      padding-bottom: 3rem;
+    }
+    img.headshot {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      margin-bottom: 1.5rem;
     }
     h1 {
-      font-weight: 700;
-      font-size: 2.5rem;
       margin-bottom: 0.3rem;
-    }
-    h2 {
-      font-weight: 600;
-      font-size: 1.8rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-      color: #555;
+      font-weight: 700;
+      font-size: 2.2rem;
     }
     p {
       font-size: 1.1rem;
       color: #555;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1.4rem;
-      background-color: #5a9bd4;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    a.button:hover {
-      background-color: #3e7ab8;
-    }
-    .projects, .gallery {
-      display: grid;
-      gap: 1.5rem;
-    }
-    .projects {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    .project-card {
-      background-color: white;
-      padding: 1rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      color: #333;
-    }
-    .project-card h3 {
-      margin-top: 0;
-    }
-    .gallery {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      margin-top: 1rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 6px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-    form {
-      background: white;
-      padding: 1rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 0.7rem;
       margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
-      color: #333;
-      font-family: inherit;
-    }
-    form button {
-      background-color: #5a9bd4;
-      color: white;
-      border: none;
-      padding: 0.7rem 1.5rem;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    form button:hover {
-      background-color: #3e7ab8;
-    }
-    @media (max-width: 600px) {
-      header, section {
-        margin: 1rem;
-        padding: 0 0.5rem;
-      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Hello, I’m [Your Name]</h1>
-    <p>A passionate developer and lifelong learner.</p>
-    <a href="#projects" class="button">See My Work</a>
-  </header>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello! I am a fourth year student at the University of Oregon. I am earning
-      a B.S in Computer Science, with a minor in Psychology. Passionate about Mental Health and AI,
-      I want to find new ways of combining the two to deepen mental health resources. When I am not 
-      working on my studies, I enjoy reading, spending time with friends and family, playing with my 
-      cat, and playing puzzle games. 
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>A simple app to track daily habits and boost productivity.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>A website redesign for a local community nonprofit.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project Three</h3>
-        <p>An interactive map showing hiking trails near me.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/150" alt="Gallery image 1" />
-      <img src="https://via.placeholder.com/150" alt="Gallery image 2" />
-      <img src="https://via.placeholder.com/150" alt="Gallery image 3" />
-      <img src="https://via.placeholder.com/150" alt="Gallery image 4" />
-      <img src="https://via.placeholder.com/150" alt="Gallery image 5" />
-      <img src="https://via.placeholder.com/150" alt="Gallery image 6" />
-      <img src="https://via.placeholder.com/150" alt="Gallery image 7" />
-      <img src="https://via.placeholder.com/150" alt="Gallery image 8" />
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+  <main>
+    <img src="https://via.placeholder.com/150" alt="Your Headshot" class="headshot" />
+    <h1>Hello, I'm [Your Name]</h1>
+    <p>I’m a passionate developer who loves crafting solutions that matter.</p>
+    <p>Outside of coding, I enjoy hiking, reading, and discovering new coffee shops.</p>
+  </main>
 
 </body>
 </html>
