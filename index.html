@@ -1,3 +1,4 @@
+<!-- Base layout for Sam Spurlock's upgraded portfolio -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,27 +7,32 @@
   <title>Home - Sam Spurlock</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <div class="page">
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="now.html">Now</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <main>
-    <img src="Sam.jpg" alt="Sam Spurlock Headshot" class="headshot" />
-    <h1>Hello, I'm Sam Spurlock</h1>
-    <p>
-      I'm a fourth-year student at the University of Oregon, pursuing a B.S. in Computer Science with a minor in Psychology.  
-      I’m passionate about mental health and AI, and I want to explore new ways to combine the two to enhance mental health resources.
-    </p>
-    <p>
-      When I’m not studying, I enjoy reading, spending time with friends and family, playing with my cat, and puzzle games.
-    </p>
-  </main>
-
+    <main class="fade-in">
+      <img src="IMG_7065.jpg" alt="Sam Spurlock Headshot" class="headshot" />
+      <h1 class="typewriter">Hello, I'm Sam Spurlock</h1>
+      <p>
+        I'm a fourth-year student at the University of Oregon, pursuing a B.S. in Computer Science with a minor in Psychology.
+        I’m passionate about mental health and AI, and I want to explore new ways to combine the two to enhance mental health resources.
+      </p>
+      <p>
+        When I’m not studying, I enjoy reading, spending time with friends and family, playing with my cat, and puzzle games.
+      </p>
+      <div class="socials">
+        <a href="https://github.com/sspurlo2" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://linkedin.com/in/sspurlo2" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
