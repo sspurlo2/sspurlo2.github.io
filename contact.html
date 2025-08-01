@@ -4,75 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact - Sam Spurlock</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
-    }
-    nav {
-      background: #4a90e2;
-      padding: 1rem 2rem;
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-    }
-    nav a:hover {
-      background: #357ABD;
-    }
-    nav a.active {
-      background: #285EAA;
-    }
-    main {
-      max-width: 600px;
-      margin: 3rem auto;
-      padding: 2rem 1rem;
-      background: white;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin-bottom: 1.5rem;
-      font-weight: 700;
-      font-family: 'Helvetica Neue', sans-serif;
-      text-align: center;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    input, textarea {
-      padding: 0.7rem;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-family: inherit;
-      resize: vertical;
-    }
-    button {
-      background-color: #4a90e2;
-      color: white;
-      border: none;
-      padding: 0.7rem;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #357ABD;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -84,10 +16,14 @@
 
   <main>
     <h1>Contact Me</h1>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
+    <form action="https://formsubmit.co/abc123456789" method="POST">
+      <input type="hidden" name="_subject" value="New message from your website!" />
+      <input type="hidden" name="_next" value="https://sspurlo2.github.io/thankyou.html" />
+      <input type="hidden" name="_captcha" value="false" />
+
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </main>
