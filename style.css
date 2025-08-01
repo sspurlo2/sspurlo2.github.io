@@ -1,4 +1,4 @@
-body {
+body { 
   margin: 0;
   font-family: 'Georgia', serif;
   background-color: #121212;
@@ -15,25 +15,22 @@ nav {
 }
 
 nav a {
-  color: #c94f7c;
+  color: #c94f7c; /* darker pink for nav links */
   text-decoration: none;
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background: #9b2f5c;
-  color: #f8e1ef;
+  background: #9b2f5c; /* deeper pink hover bg */
+  color: #f8e1ef; /* very light pink text on hover */
 }
 
 nav a.active {
-  background: #7b49d3;
+  background: #7b49d3; /* purple highlight for active page */
   color: white;
-}
-
-h1 {
-    color: #b03060;
 }
 
 main {
@@ -60,11 +57,11 @@ h1 {
   font-weight: 700;
   font-size: 2rem;
   font-family: 'Helvetica Neue', sans-serif;
-  color: #7bdff2;
+  color: #b03060; /* dark raspberry pink */
 }
 
 h2 {
-  color: #fcbf49;
+  color: #b03060; /* project titles same pink */
 }
 
 .project {
@@ -72,7 +69,7 @@ h2 {
 }
 
 .project a {
-  color: #90caf9;
+  color: #c94f7c; /* same dark pink for project links */
   text-decoration: none;
   font-weight: 500;
 }
@@ -107,6 +104,7 @@ button {
   font-size: 1rem;
   cursor: pointer;
   margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
