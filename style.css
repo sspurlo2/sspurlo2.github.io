@@ -57,12 +57,11 @@ h1 {
   font-weight: 700;
   font-size: 2rem;
   font-family: 'Helvetica Neue', sans-serif;
-  color: #b03094; /* dark raspberry pink */
+  color: #b03060;
 }
 
 h2 {
-  color: #b03060; /* project titles same pink */
-}
+  color: #b03060;
 
 .project {
   margin-bottom: 1.8rem;
@@ -156,7 +155,7 @@ main {
 .project-card a {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #c94f7c;
+  color: #b03060;
   text-decoration: none;
 }
 
@@ -183,7 +182,7 @@ main {
 
 .typewriter {
   overflow: hidden;
-  border-right: 0.15em solid #c94f7c;
+  border-right: 0.15em solid #b03060;
   white-space: nowrap;
   animation: typing 2.5s steps(30, end), blink-caret 0.75s step-end infinite;
   animation-fill-mode: forwards;  /* <- This keeps the final state! */
@@ -191,7 +190,7 @@ main {
 }
 .typewriter {
   overflow: hidden;
-  border-right: 0.15em solid #c94f7c;
+  border-right: 0.15em solid#b03060;
   white-space: nowrap;
   animation: typing 2.5s steps(30, end);
   animation-fill-mode: forwards;  /* <- This keeps the final state! */
@@ -203,10 +202,6 @@ main {
   from { width: 0 }
   to { width: 100% }
 }
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #c94f7c; }
 }
 
 
