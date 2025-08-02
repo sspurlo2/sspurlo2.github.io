@@ -26,6 +26,14 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
       transition: transform 0.2s ease;
       display: inline-block;
+
+      /* Black outline for better readability */
+      -webkit-text-stroke: 1px black;
+      text-shadow:
+        1px 1px 0 black,
+       -1px -1px 0 black,
+        1px -1px 0 black,
+       -1px 1px 0 black;
     }
 
     #bubble-button a:hover {
@@ -90,18 +98,16 @@
   <!-- Smart Bubble Link Logic -->
   <script>
     const bubbleLink = document.getElementById('bubble-link');
+    const currentPage = window.location.pathname.toLowerCase();
 
-    const firstProject = document.querySelector('.project-card h2');
-    let project = firstProject?.textContent.toLowerCase() || '';
-
-    if (project.includes('cone crisis')) {
+    if (currentPage.includes('cone') || currentPage.includes('ice') || currentPage.includes('crisis')) {
       bubbleLink.href = 'https://play.unity.com/en/games/a4d2a679-3811-4d96-bac8-e07c5fcdbfdc/build';
       bubbleLink.textContent = '▶ Play';
-    } else if (project.includes('brains and bots')) {
+    } else if (currentPage.includes('brains') || currentPage.includes('bots')) {
       bubbleLink.href = 'Brains_and_Bots_Report.pdf';
       bubbleLink.textContent = '⬇ PDF';
       bubbleLink.setAttribute('download', '');
-    } else if (project.includes('focus nudge')) {
+    } else if (currentPage.includes('focus') || currentPage.includes('nudge')) {
       bubbleLink.href = 'https://github.com/sspurlo2/FocusNudge';
       bubbleLink.textContent = '🔗 GitHub';
     } else {
