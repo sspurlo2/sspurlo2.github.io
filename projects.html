@@ -7,9 +7,47 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-</head>
-<body>
+  <style>
+    #bubble-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 10000;
+    }
 
+    #bubble-button a {
+      background-color: #c94f7c;
+      color: white;
+      padding: 0.75rem 1.4rem;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+      display: inline-block;
+    }
+
+    #bubble-button a:hover {
+      transform: scale(1.05);
+      background-color: #9b2f5c;
+    }
+
+    @media (max-width: 768px) {
+      #bubble-button {
+        bottom: 15px;
+        right: 15px;
+      }
+
+      #bubble-button a {
+        font-size: 14px;
+        padding: 0.6rem 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
   <nav>
     <a href="index.html">Home</a>
     <a href="projects.html" class="active">Projects</a>
@@ -17,32 +55,58 @@
     <a href="now.html">Now</a>
   </nav>
 
-<main>
-  <h1><i class="fa-solid fa-laptop-code"></i> My Projects</h1>
+  <main>
+    <h1><i class="fa-solid fa-laptop-code"></i> My Projects</h1>
 
-  <div class="project-card">
-    <img src="Cone_crisis.png" alt="Cone Crisis Game Screenshot">
-    <h2><i class="fa-solid fa-ice-cream"></i> Cone Crisis</h2>
-    <p>A video game where you run your own ice cream shop. Built with Unity and C#.</p>
-    <a href="https://play.unity.com/en/games/a4d2a679-3811-4d96-bac8-e07c5fcdbfdc/build" target="_blank" class="play-button">
-  ▶ Play WebGL Version
-</a>
+    <div class="project-card">
+      <img src="Cone_crisis.png" alt="Cone Crisis Game Screenshot">
+      <h2><i class="fa-solid fa-ice-cream"></i> Cone Crisis</h2>
+      <p>A video game where you run your own ice cream shop. Built with Unity and C#.</p>
+      <a href="https://play.unity.com/en/games/a4d2a679-3811-4d96-bac8-e07c5fcdbfdc/build" target="_blank" class="play-button">
+        ▶ Play WebGL Version
+      </a>
+    </div>
+
+    <div class="project-card">
+      <img src="brains_bots.png" alt="Brains and Bots PDF Cover">
+      <h2><i class="fa-solid fa-brain"></i> Brains and Bots</h2>
+      <p>A technical report exploring how AI can improve mental health support.</p>
+      <a href="Brains_and_Bots_Report.pdf" download>Download PDF</a>
+    </div>
+
+    <div class="project-card">
+      <img src="DistractedIcon.png" alt="Focus Nudge Screenshot">
+      <h2><i class="fa-solid fa-bell-slash"></i> Focus Nudge</h2>
+      <p>A Chrome extension to gently remind you to stay on task.</p>
+      <a href="https://github.com/sspurlo2/FocusNudge" target="_blank">View on GitHub</a>
+    </div>
+  </main>
+
+  <!-- Floating Action Bubble -->
+  <div id="bubble-button">
+    <a id="bubble-link" href="#" target="_blank">▶ Play</a>
   </div>
 
-  <div class="project-card">
-    <img src="brains_bots.png" alt="Brains and Bots PDF Cover">
-    <h2><i class="fa-solid fa-brain"></i> Brains and Bots</h2>
-    <p>A technical report exploring how AI can improve mental health support.</p>
-    <a href="Brains_and_Bots_Report.pdf" download>Download PDF</a>
-  </div>
+  <!-- Smart Bubble Link Logic -->
+  <script>
+    const bubbleLink = document.getElementById('bubble-link');
 
-  <div class="project-card">
-    <img src="DistractedIcon.png" alt="Focus Nudge Screenshot">
-    <h2><i class="fa-solid fa-bell-slash"></i> Focus Nudge</h2>
-    <p>A Chrome extension to gently remind you to stay on task.</p>
-    <a href="https://github.com/sspurlo2/FocusNudge" target="_blank">View on GitHub</a>
-  </div>
-</main>
+    const firstProject = document.querySelector('.project-card h2');
+    let project = firstProject?.textContent.toLowerCase() || '';
 
+    if (project.includes('cone crisis')) {
+      bubbleLink.href = 'https://play.unity.com/en/games/a4d2a679-3811-4d96-bac8-e07c5fcdbfdc/build';
+      bubbleLink.textContent = '▶ Play';
+    } else if (project.includes('brains and bots')) {
+      bubbleLink.href = 'Brains_and_Bots_Report.pdf';
+      bubbleLink.textContent = '⬇ PDF';
+      bubbleLink.setAttribute('download', '');
+    } else if (project.includes('focus nudge')) {
+      bubbleLink.href = 'https://github.com/sspurlo2/FocusNudge';
+      bubbleLink.textContent = '🔗 GitHub';
+    } else {
+      document.getElementById('bubble-button').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
