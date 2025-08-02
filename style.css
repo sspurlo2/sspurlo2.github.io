@@ -168,7 +168,9 @@ button:hover {
 }
 
 .play-button {
-  display: inline-block;
+  display: block;
+  visibility: visible;
+  opacity: 1;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
@@ -177,13 +179,14 @@ button:hover {
   color: #fff;
   border: none;
   border-radius: 30px;
-  text-decoration: none;
+  text-decoration: 2px dashed red;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(201, 79, 124, 0.4);
+  z-index: 9999;
+  position: relative;
 }
 
 .play-button:hover {
-  border: 2px dashed red;
   background: #9b2f5c;
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(201, 79, 124, 0.6);
