@@ -192,14 +192,14 @@ button:hover {
   /* Softer black outline */
   -webkit-text-stroke: 0.3px black;
   text-shadow:
-    0.5px 0.5px 0 black,
-   -0.5px -0.5px 0 black,
-    0.5px -0.5px 0 black,
-   -0.5px 0.5px 0 black;
+    0.5px 0.5px 0 #9b2f5c,
+   -0.5px -0.5px 0 #9b2f5c,
+    0.5px -0.5px 0 #9b2f5c,
+   -0.5px 0.5px 0 #9b2f5c;
 }
 
 .play-button:hover {
-  background: #9b2f5c;
+  background: #080808;
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(201, 79, 124, 0.6);
 }
