@@ -2,11 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank You</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2b2b2b 100%);
+      color: #eaeaea;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+      max-width: 500px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    a {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border: 2px solid #eaeaea;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #eaeaea;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    a:hover {
+      background: #eaeaea;
+      color: #1a1a1a;
+    }
+  </style>
 </head>
 <body>
-  <h1>Thank you for reaching out!</h1>
-  <p>Your message has been sent successfully. I will get back to you soon.</p>
-  <a href="index.html">Return to homepage</a>
+  <div class="container">
+    <h1>Thank You!</h1>
+    <p>Your message has been sent successfully. I’ll be in touch soon.</p>
+    <a href="index.html">Back to Home</a>
+  </div>
 </body>
 </html>
