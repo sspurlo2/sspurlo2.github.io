@@ -99,14 +99,14 @@
 
     if (currentPage.includes('cone') || currentPage.includes('ice') || currentPage.includes('crisis')) {
       bubbleLink.href = 'https://play.unity.com/en/games/a4d2a679-3811-4d96-bac8-e07c5fcdbfdc/build';
-      bubbleLink.textContent = '▶ Play';
+      bubbleLink.textContent = 'Play';
     } else if (currentPage.includes('brains') || currentPage.includes('bots')) {
       bubbleLink.href = 'Brains_and_Bots_Report.pdf';
-      bubbleLink.textContent = '⬇ PDF';
+      bubbleLink.textContent = 'PDF';
       bubbleLink.setAttribute('download', '');
     } else if (currentPage.includes('focus') || currentPage.includes('nudge')) {
       bubbleLink.href = 'https://github.com/sspurlo2/FocusNudge';
-      bubbleLink.textContent = '🔗 GitHub';
+      bubbleLink.textContent = 'GitHub';
     } else {
       document.getElementById('bubble-button').style.display = 'none';
     }
