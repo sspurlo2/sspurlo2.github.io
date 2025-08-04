@@ -175,15 +175,21 @@ button:hover {
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
   font-weight: 600;
-  background: #c94f7c; /* vibrant pink */
+  background: #c94f7c;
   color: #fff;
   border: none;
   border-radius: 30px;
-  text-decoration: 2px dashed red;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(201, 79, 124, 0.4);
   z-index: 9999;
   position: relative;
+
+  -webkit-text-stroke: 0.8px black;
+  text-shadow:
+    1px 1px 0 black,
+   -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px 1px 0 black;
 }
 
 .play-button:hover {
