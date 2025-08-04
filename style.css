@@ -184,6 +184,15 @@ button:hover {
   z-index: 9999;
   position: relative;
 
+  /* Softer black outline */
+  -webkit-text-stroke: 0.3px black;
+  text-shadow:
+    0.5px 0.5px 0 black,
+   -0.5px -0.5px 0 black,
+    0.5px -0.5px 0 black,
+   -0.5px 0.5px 0 black;
+}
+
   -webkit-text-stroke: 0.8px black;
   text-shadow:
     1px 1px 0 black,
