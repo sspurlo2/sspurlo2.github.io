@@ -166,7 +166,6 @@ button:hover {
   from { width: 0 }
   to { width: 100% }
 }
-
 .play-button {
   display: block;
   visibility: visible;
@@ -191,14 +190,6 @@ button:hover {
    -0.5px -0.5px 0 black,
     0.5px -0.5px 0 black,
    -0.5px 0.5px 0 black;
-}
-
-  -webkit-text-stroke: 0.8px black;
-  text-shadow:
-    1px 1px 0 black,
-   -1px -1px 0 black,
-    1px -1px 0 black,
-   -1px 1px 0 black;
 }
 
 .play-button:hover {
