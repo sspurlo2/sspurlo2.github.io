@@ -27,18 +27,33 @@
       font-size: 18px;
       text-decoration: none;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-     -webkit-text-stroke: 0.3px black;
-        text-shadow:
+      -webkit-text-stroke: 0.3px black;
+      text-shadow:
         0.5px 0.5px 0 #9b2f5c,
         -0.5px -0.5px 0 #9b2f5c,
         0.5px -0.5px 0 #9b2f5c,
-        -0.5px 0.5px 0 #9b2f5c,
-;
+        -0.5px 0.5px 0 #9b2f5c;
     }
 
     .resume-download:hover {
       background-color: #9b2f5c;
       transform: scale(1.05);
+    }
+
+    nav {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -53,9 +68,9 @@
 
   <main>
     <h1><i class="fa-solid fa-file-lines"></i> My Resume</h1>
-    <p>Click below to view or download my current resume as a PDF.</p>
-    <a class="resume-download" href="Resume.pdf" download>
-      Download Resume
+    <p>Click below to open my resume in your browser.</p>
+    <a class="resume-download" href="Resume.pdf" target="_blank" rel="noopener noreferrer">
+      View Resume
     </a>
   </main>
 </body>
