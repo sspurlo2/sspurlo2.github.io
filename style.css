@@ -203,3 +203,13 @@ button:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(201, 79, 124, 0.6);
 }
+a:link,
+a:visited {
+  color: #c94f7c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f8e1ef;
+  text-decoration: underline;
+}
